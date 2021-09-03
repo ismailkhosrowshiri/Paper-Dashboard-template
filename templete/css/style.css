@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Muli', Arial, sans-serif;
+    background-color: #f4f3ef;
+    color: #66615b;
+    display: grid;
+    grid-template-columns: 20% , 80%;
+    grid-template-areas: 
+   " aside-part main-part" 
+}
+.main-part{
+    grid-area: main-part;
+    border-left: 1px #c5c5c5 solid ;
+    padding: 10px 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-note{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-list{
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    left: 0;
+}
+.nav-list-item{
+    display: flex;
+    
+}
+.nav-list-p{
+    display: inline;
+    right: 0;
+}
+.sec-cap,.sec-rev,
+.sec-err,.sec-follower{
+   display: inline-block;
+    width: 20%;
+    height:120px;
+    background-color: white;
+    padding:10px 20px;
+    margin: 20px;
+}
+.sec-cap-img{
+    display: inline;
+    padding: 10px;
+}
+.sec2-img{
+    width: 100%;
+    height: auto;
+}
+.dd{
+    margin-right:5px ;
+    font-size: 18px;
+}
+
+.aside-part{
+    grid-area: aside-part;
+    position: fixed;
+}
+.aside-header{
+    font-weight: 250;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+.aside-header-hr{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.aside-list-item{
+    display: inline;
+    list-style: none;
+}
+.aside-icon-1{
+    width: 25px;
+    height: 25px;
+    color: orangered;
+    fill: orangered;
+}
+.aside-icon-1-txt{
+    color :#EB7820;
+}
+.footer{
+    
+    grid-area: footer;
+}
+.footer-lista{
+    display: inline;
+    list-style: none;
+
+}
+.footer-list-item{
+    list-style: none;
+    display: inline;
+    margin: 10px 20px;
+    padding: 10px;
+    
+}
+.footer-list-item-p{
+    display: inline;
+    font-size: 14px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.footer-p{
+    display: inline;
+    float: right;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.footer-p-sp{
+    color: turquoise;
+    
+} 
